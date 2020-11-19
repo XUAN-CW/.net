@@ -1,0 +1,5 @@
+D:\core\course\.net\lab01\lab01\bin\lab01.dll
+D:\core\course\.net\lab01\lab01\bin\lab01.pdb
+D:\core\course\.net\lab01\lab01\obj\Debug\lab01.csprojResolveAssemblyReference.cache
+D:\core\course\.net\lab01\lab01\obj\Debug\lab01.dll
+D:\core\course\.net\lab01\lab01\obj\Debug\lab01.pdb
