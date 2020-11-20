@@ -1,0 +1,109 @@
+﻿@model IEnumerable<WebApplication1.Models.Article>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<div style="float:left;width:200px;">
+    栏目列表
+    <ul>
+        <li id="lanmu1">栏目一</li>
+        <li id="lanmu2">栏目一</li>
+        <li id="lanmu3">栏目一</li>
+        <li id="lanmu4">栏目一</li>
+        <li id="lanmu5">栏目二</li>
+
+    </ul>
+</div>
+
+<div id="result" style="height:200px;">新闻列表</div>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    function doSearch(lanmuid, pageno) {
+
+        $.ajax({
+            type: "post",        //以post方式与后台沟通
+            url: "getarticle",	//调用action
+            dataType: "html",	     //从action返回的值以html方式解释
+            data: { lanmuid: lanmuid, pageno: pageno },         //传送的数据
+            success: function (msg) {
+                $('#result').html(msg);
+
+            }
+
+
+
+        });
+
+    }
+
+    $(document).ready(
+   function () {
+       $("#lanmu1").click(function () {
+           $.ajax({
+               type: "post",
+               url: "getarticle",
+               dataType: "html",
+               data: "lanmuid=" + 1,
+               success: function (msg) {
+                   $('#result').html(msg);
+                    }
+
+                });
+            });
+            $("#lanmu2").click(function () {
+                $.ajax({
+                    type: "post",
+                    url: "getarticle",
+                    dataType: "html",
+                    data: "lanmuid=" + 2,
+                    success: function (msg) {
+                        $('#result').html(msg);
+                    }
+
+                });
+            });
+            $("#lanmu3").click(function () {
+                $.ajax({
+                    type: "post",
+                    url: "getarticle",
+                    dataType: "html",
+                    data: "lanmuid=" + 3,
+                    success: function (msg) {
+                        $('#result').html(msg);
+                    }
+
+                });
+            });
+            $("#lanmu4").click(function () {
+                $.ajax({
+                    type: "post",
+                    url: "getarticle",
+                    dataType: "html",
+                    data: "lanmuid=" + 4,
+                    success: function (msg) {
+                        $('#result').html(msg);
+                    }
+
+                });
+            });
+            $("#lanmu5").click(function () {
+                $.ajax({
+                    type: "post",
+                    url: "getarticle",
+                    dataType: "html",
+                    data: "lanmuid=" + 5,
+                    success: function (msg) {
+                        $('#result').html(msg);
+                    }
+
+                });
+            });
+        });
+
+</script>
+
+<div>@Html.Raw(ViewBag.page)</div>
