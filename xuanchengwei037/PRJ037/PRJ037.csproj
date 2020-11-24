@@ -227,6 +227,7 @@
     <Content Include="Views\shiptable037\Details.cshtml" />
     <Content Include="Views\shiptable037\Edit.cshtml" />
     <Content Include="Views\shiptable037\Index.cshtml" />
+    <Content Include="Views\shiptable037\calculate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

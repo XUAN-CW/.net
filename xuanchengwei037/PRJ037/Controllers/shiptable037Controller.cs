@@ -14,6 +14,22 @@ namespace PRJ037.Controllers
     {
         private shiptable037Context db = new shiptable037Context();
 
+
+        public ActionResult calculate()
+        {
+            int min = 999999;
+            int max = -999999;
+            List<shiptable037> result = db.shiptable037.ToList();
+            foreach (shiptable037 item in result)
+            {
+                min = item.load > min ? min : item.load;
+                max = item.load > max ? item.load : max;
+            }
+            
+            ViewBag.MESSAGE = "min:"+min+"max:"+max;
+            return View();
+        }
+
         // GET: shiptable037
         public ActionResult Index()
         {
