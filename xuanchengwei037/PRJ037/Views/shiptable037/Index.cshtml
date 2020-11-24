@@ -1,14 +1,43 @@
 ﻿@model IEnumerable<PRJ037.Models.shiptable037>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "1800301037禤成伟";
 }
 
-<h2>Index</h2>
+<h2>1800301037禤成伟</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <h1>目录 1</h1>
+        </div>
+        <div class="item">
+            <h1>目录 2</h1>
+        </div>
+        <div class="item">
+            <h1>目录 3</h1>
+        </div>
+    </div>
+</div>
+
+
 <table class="table">
     <tr>
         <th>
@@ -49,3 +78,18 @@
 }
 
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+@Html.ActionLink("Create New", "Create")
+&nbsp&nbsp&nbsp&nbsp
+<button type="button" id="calculate">@Html.ActionLink("calculate", "calculate")</button>

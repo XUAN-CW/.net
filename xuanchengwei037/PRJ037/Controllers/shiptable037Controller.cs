@@ -18,7 +18,7 @@ namespace PRJ037.Controllers
         public ActionResult calculate()
         {
             int min = 999999;
-            int max = -999999;
+            int max = -min;
             List<shiptable037> result = db.shiptable037.ToList();
             foreach (shiptable037 item in result)
             {
@@ -26,7 +26,7 @@ namespace PRJ037.Controllers
                 max = item.load > max ? item.load : max;
             }
             
-            ViewBag.MESSAGE = "min:"+min+"max:"+max;
+            ViewBag.MESSAGE = max==-min?"没有船":"min:"+min+" max:"+max;
             return View();
         }
 
