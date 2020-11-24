@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRJ037", "PRJ037\PRJ037.csproj", "{4FAA6A22-0A9D-4B6C-95B3-6CAC0DC5B114}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRJ037", "PRJ037\PRJ037.csproj", "{1A8E6F2D-CF04-4607-B7A6-831EC97CBCD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4FAA6A22-0A9D-4B6C-95B3-6CAC0DC5B114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FAA6A22-0A9D-4B6C-95B3-6CAC0DC5B114}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FAA6A22-0A9D-4B6C-95B3-6CAC0DC5B114}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FAA6A22-0A9D-4B6C-95B3-6CAC0DC5B114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A8E6F2D-CF04-4607-B7A6-831EC97CBCD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8E6F2D-CF04-4607-B7A6-831EC97CBCD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8E6F2D-CF04-4607-B7A6-831EC97CBCD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8E6F2D-CF04-4607-B7A6-831EC97CBCD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

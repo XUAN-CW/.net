@@ -1,0 +1,50 @@
+﻿@model PRJ037.Models.shiptable037
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>shiptable037</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.shipname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.shipname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.load)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.load)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.shiptype)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.shiptype)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.madetime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.madetime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
