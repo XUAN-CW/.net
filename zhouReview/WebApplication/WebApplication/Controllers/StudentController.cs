@@ -26,7 +26,15 @@ namespace WebApplication.Controllers
             return View();
         }
 
-  
+
+        public ActionResult ViewDataTest()
+        {
+            ViewData["Message"] = "Hello";
+            ViewData["Date"] = DateTime.Now;
+            return View();
+        }
+
+
         public ActionResult Details(string id)
         {
             Student student = db.Students.Find(id);
