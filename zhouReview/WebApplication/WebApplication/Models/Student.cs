@@ -11,7 +11,7 @@ namespace WebApplication.Models
     {
         [Display(Name = "id")]
         [Required(ErrorMessage = "必填")]
-        [StringLength(10, MinimumLength = 1, ErrorMessage = "必须是6~10个字符")]
+        [StringLength(10, MinimumLength = 6, ErrorMessage = "必须是6~10个字符")]
         public string id { get; set; }
 
         [Display(Name = "name")]
