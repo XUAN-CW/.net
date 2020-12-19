@@ -20,9 +20,9 @@ namespace WebApplication.Controllers
             return View(db.Students.ToList());
         }
 
-        public ActionResult ViewBagTest(int inData)
+        public ActionResult ViewBagTest(int requestData)
         {
-            ViewBag.outData = inData + 1;
+            ViewBag.respondData = requestData + 1;
             return View();
         }
 

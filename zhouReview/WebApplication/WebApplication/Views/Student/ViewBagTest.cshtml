@@ -1,3 +1,5 @@
-﻿currentVal为：@ViewBag.outData;
+﻿respond 的值为：@ViewBag.respondData
 
-@Html.ActionLink("add", "ViewBagTest", new { inData = ViewBag.outData })
+@* http://localhost:60591/Student/ViewBagTest?inData=23 *@
+
+@Html.ActionLink("add", "ViewBagTest", new { requestData = ViewBag.respondData })
