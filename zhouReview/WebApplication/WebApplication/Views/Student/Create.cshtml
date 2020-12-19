@@ -1,18 +1,13 @@
 ﻿@model WebApplication.Models.Student
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
-
-    
-            @Html.LabelFor(model => model.id)
-            
-                @Html.EditorFor(model => model.id)
-                @Html.EditorFor(model => model.name)
-                @Html.EditorFor(model => model.sex)
-                @Html.EditorFor(model => model.age)
-           
-            <input type="submit" value="Create"/>
+    @Html.EditorFor(model => model.id)
+    @Html.EditorFor(model => model.name)
+    @Html.EditorFor(model => model.sex)
+    @Html.EditorFor(model => model.age)
+    <input type="submit" value="Create"/>
 }
 
 
