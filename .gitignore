@@ -13,7 +13,18 @@
 /review/review/Views/Shared/
 
 
-
+/zhouReview/WebApplication/packages/
+/zhouReview/WebApplication/review/App_Data/
+/zhouReview/WebApplication/review/App_Start/
+/zhouReview/WebApplication/review/bin/
+/zhouReview/WebApplication/review/Content/
+/zhouReview/WebApplication/review/fonts/
+/zhouReview/WebApplication/review/obj/
+/zhouReview/WebApplication/review/Properties/
+/zhouReview/WebApplication/review/Scripts/
+/zhouReview/WebApplication/review/Views/Account/
+/zhouReview/WebApplication/review/Views/Home/
+/zhouReview/WebApplication/review/Views/Shared/
 
 
 
@@ -38,3 +49,4 @@
 *.cache
 *.config
 *.suo
+*.csproj
