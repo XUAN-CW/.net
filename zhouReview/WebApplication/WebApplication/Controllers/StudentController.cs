@@ -15,18 +15,13 @@ namespace WebApplication.Controllers
         private StudentDBContext db = new StudentDBContext();
 
 
-        public ActionResult Index()
-        {
-            return View(db.Students.ToList());
-        }
+
 
         public ActionResult ViewBagTest(int requestData)
         {
             ViewBag.respondData = requestData + 1;
             return View();
         }
-
-
         public ActionResult ViewDataTest()
         {
             ViewData["Message"] = "Hello";
@@ -35,6 +30,23 @@ namespace WebApplication.Controllers
         }
 
 
+
+
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+        public ActionResult Delete(string id)
+        {
+            Student student = db.Students.Find(id);
+            return View(student);
+        }
+        public ActionResult Edit(string id)
+        {
+            Student student = db.Students.Find(id);
+            return View(student);
+        }
         public ActionResult Details(string id)
         {
             Student student = db.Students.Find(id);
@@ -42,10 +54,7 @@ namespace WebApplication.Controllers
         }
 
 
-        public ActionResult Create()
-        {
-            return View();
-        }
+
 
         [HttpPost]
         public ActionResult Create(Student student)
@@ -59,14 +68,14 @@ namespace WebApplication.Controllers
 
             return View(student);
         }
-
-        public ActionResult Edit(string id)
+        [HttpPost, ActionName("Delete")]
+        public ActionResult DeleteConfirmed(string id)
         {
             Student student = db.Students.Find(id);
-            return View(student);
+            db.Students.Remove(student);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
-
-
         [HttpPost]
         public ActionResult Edit(Student student)
         {
@@ -78,23 +87,11 @@ namespace WebApplication.Controllers
             }
             return View(student);
         }
-
-
-        public ActionResult Delete(string id)
+        public ActionResult Index()
         {
-            Student student = db.Students.Find(id);
-            return View(student);
+            return View(db.Students.ToList());
         }
 
-
-        [HttpPost, ActionName("Delete")]
-        public ActionResult DeleteConfirmed(string id)
-        {
-            Student student = db.Students.Find(id);
-            db.Students.Remove(student);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
 
     }
 }
