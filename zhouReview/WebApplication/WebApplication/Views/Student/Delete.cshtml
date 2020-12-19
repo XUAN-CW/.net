@@ -2,11 +2,13 @@
 
 
 
-    @Html.DisplayNameFor(model => model.name)
-    @Html.DisplayFor(model => model.name)
+
         
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
+        @Html.DisplayNameFor(model => model.name)
+        @Html.DisplayFor(model => model.name)
         <input type="submit" value="Delete"/> 
     }
 
