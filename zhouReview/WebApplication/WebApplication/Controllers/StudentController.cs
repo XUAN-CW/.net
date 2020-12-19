@@ -20,6 +20,12 @@ namespace WebApplication.Controllers
             return View(db.Students.ToList());
         }
 
+        public ActionResult ViewBagTest(int inData)
+        {
+            ViewBag.outData = inData + 1;
+            return View();
+        }
+
   
         public ActionResult Details(string id)
         {
