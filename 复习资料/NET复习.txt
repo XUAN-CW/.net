@@ -1,0 +1,120 @@
+（一）基于.NET MVC的开发技术概述
+1. 主要内容
+（1）.NET的体系结构。
+（2）.NET MVC开发技术的发展。
+（3）MVC框架工作原理。
+（4）MVC程序设计的基本过程，包括创建、编辑、调试、部署等过程。
+2. 基本要求
+（1）了解.NET开发技术的发展历史、应用背景、编程思想和技术框架等；
+（2）理解MVC框架工作原理和运行机制；
+（3）掌握MS Visual Studio开发环境的配置和使用、调试。
+3. 重点、难点
+重点：开发工具的使用、MVC的页面请求、应答过程。
+难点：MVC架构原理及其前后端分离的编程思想。
+
+（二）C#编程基础
+
+（1）掌握C#语句和语法。
+（2）掌握C#的数据类型、变量、运算符、表达式。
+（3）掌握C#的自动属性设计。
+（4）掌握C#的类和类关系的设计。
+（5）了解C#的事件和委托。
+   重点、难点
+重点：C#语句和语法，泛型，C#的类和类关系的设计。
+难点：通过C#的事件和委托。
+
+（三）.NET MVC编程
+1. 主要内容
+（1）控制器Controller、Action方法、视图View、模型Model的操作
+（2）URL路由及自定义路由。
+（3）ActionResult返回值。
+2. 基本要求
+（1）掌握控制器的添加、视图的添加，Action方法的定义。
+（2）掌握路由的基本原理和默认路由的配置。
+（3）掌握View（）：返回视图、PartialView（）：返回局部视图、Content（）：返回文本、Redirect（）：跳转到URL、RedirectToAction（）：跳转到Action、Json（）：返回JSON格式数据
+3. 重点、难点
+重点：掌握MVC程序的创建、控制器的添加、视图的添加，Action方法的定义。
+难点：URL路由及自定义路由。
+
+（四）.NET MVC控制器
+1. 主要内容
+（1）控制器概述。
+（2）Controller工作流程。
+（3）动作名称选择器。
+（4）动作方法选择器。
+（5）过滤器属性。
+（6）动作执行结果。
+（7）Controller与View的数据传递。
+2. 基本要求
+（1）掌握Controller的执行过程，包括Controller，Action。
+（2）掌握Controller在执行时动作过滤器（ActionFilter）机制。
+（3）掌握各种谓词的编写，常用的动作方法选择器，动作
+（4）掌握Controller与View的数据传递，ViewData，tempdata，ViewBag。
+3. 重点、难点
+重点：掌握各种谓词的编写，常用的动作方法选择器、动作，掌握Controller与View的数据传递
+难点：掌握Controller的执行过程。
+
+（五）ADO.NET EF和Linq和EF持久化框架技术
+1. 主要内容
+（1）ORM：对象关系映射。
+（2）ADO.NET中EF持久化框架的配置。
+（3）EF CodeFirst，LINQ语句的执行。
+（4）通过泛型数据集对数据库进行访问，EF增删改查。
+（5）数据迁移。
+2. 基本要求
+（1）掌握EF框架工作原理，了解常用数据库管理系统的下载和安装。掌握基于连接池和数据源的数据库访问方法。
+（2）掌握EF框架开发环境的搭建。
+（3）掌握数据库连接的创建和LINQ语言的创建和执行。
+（4）掌握EF增删改查。
+3. 重点、难点
+重点：掌握EF增删改查。
+难点：数据迁移。
+
+（六）前端页面开发技术及AJAX
+1. 主要内容
+（1）HTML语言。
+（2）CSS样式。
+（3）JavaScript语言。
+（4）jQuery语言
+2. 基本要求
+（1）掌握html的基本标签（文本、图片、超链接、列表、表格、特殊标签），Form表单（文本框、密码框、单选框、复选框、列表框、文件域、文本区域、提交和重置按钮、一般按钮、图片按钮、fieldset）。
+（2）掌握内联样式、内部样式、外部样式、CSS盒模型。
+（3）掌握JavaScript声明、JavaScript变量、JavaScript函数、JavaScript事件。
+（4）掌握jQuery基本结构、jQuery选择器、jQuery方法和事件、jQueryUI、jQueryAjax，JSON
+3. 重点、难点
+重点：掌握jQuery选择器、jQuery方法和事件，jQueryAjax。
+难点：解析异步获取的JSON数据。
+
+（七）深入剖析视图技术
+1. 主要内容
+（1）创建与指定视图
+（2）表单和HTML辅助方法
+（3）强类型视图
+（4）视图模型
+（5）分部视图
+（6）Razor视图引擎
+（7）模型绑定。
+2. 基本要求
+（1）掌握Create，Delete，details，Edit，List视图支架模板的使用。
+（2）掌握强类型模板视图，掌握MODEL，与model的区别，
+掌握Html. BeginForm，Html. LabelFor，Html. EditorFor，Html. ActionLink，Html. ValidationMessageFor，DropDownList，PasswordTextArea及TextBox辅助方法、Password辅助方法、Hidden辅助方法、DropDownList辅助方法、ListBox辅助方法、RadioButton辅助方法、CheckBox辅助方法等常用的控件。
+（3）掌握Razor视图的语法、@Styles. Render（）：@Scripts. Render（）
+（3）掌握模型绑定，ViewData，ViewBag与HTMLhelper类
+3. 重点、难点
+重点：掌握强类型视图及视图支架模板的使用，掌握模型绑定，ViewData，ViewBag与HTMLhelper类。
+难点：掌握Razor视图，遍历泛型数据。
+
+（八）MVC深入编程
+1. 主要内容
+（1）数据的新增、列表显示、数据验证。
+（2）创建数据模型
+（3）添加控制器和视图
+（4）数据验证。
+（5）数据编辑、数据删除、数据明细、条件查询
+2. 基本要求
+（1）掌握单表的新增、列表显示、数据验证；
+（3）掌握基本数据验证谓词的编写，[Required]、[StringLength]、[Range]和[RegularExpression]
+（4）掌握单表的编辑、数据删除、数据明细、条件查询。
+3. 重点、难点
+重点：掌握单表的添加、列表显示、编辑、数据删除、数据明细、条件查询。
+难点：掌握一个数据库操作的完成需要两个Action，一个显示操作界面，一个接收提交数据。
