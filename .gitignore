@@ -1,3 +1,25 @@
+/review/packages/
+
+/review/review/App_Data/
+/review/review/App_Start/
+/review/review/bin/
+/review/review/Content/
+/review/review/fonts/
+/review/review/obj/
+/review/review/Properties/
+/review/review/Scripts/
+/review/review/Views/Account/
+/review/review/Views/Home/
+/review/review/Views/Shared/
+
+
+
+
+
+
+
+
+
 
 复习资料/WebApplication.rar
 *.rar
