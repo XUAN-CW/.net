@@ -1,45 +1,13 @@
 ﻿@model WebApplication.Models.Student
 
-@{
-    ViewBag.Title = "Delete";
-}
 
 
-<div>
-
-    <dl>
-        <dt>
             @Html.DisplayNameFor(model => model.name)
-        </dt>
-
-        <dd>
             @Html.DisplayFor(model => model.name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.sex)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.sex)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.age)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.age)
-        </dd>
-
-    </dl>
+        
 
     @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
 
-        <div>
-            <input type="submit" value="Delete"/> |
-            @Html.ActionLink("Back to List", "Index")
-        </div>
+            <input type="submit" value="Delete"/> 
     }
-</div>
+
