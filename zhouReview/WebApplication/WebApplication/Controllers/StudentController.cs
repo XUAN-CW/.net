@@ -25,7 +25,6 @@ namespace WebApplication.Controllers
         public ActionResult ViewDataTest()
         {
             ViewData["Message"] = "Hello";
-            ViewData["Date"] = DateTime.Now;
             return View();
         }
 

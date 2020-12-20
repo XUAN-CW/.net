@@ -1,14 +1,9 @@
 ﻿@model WebApplication.Models.Student
 
-
-
-
-        
-
-    @using (Html.BeginForm())
-    {
-        @Html.DisplayNameFor(model => model.name)
-        @Html.DisplayFor(model => model.name)
-        <input type="submit" value="Delete"/> 
-    }
+@using (Html.BeginForm())
+{
+    @Html.DisplayNameFor(model => model.name)
+    @Html.DisplayFor(model => model.name)
+    <input type="submit" value="Delete"/> 
+}
 
